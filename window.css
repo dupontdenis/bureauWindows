@@ -2,17 +2,18 @@
 stylesheet for windows module
 */
 
-div.item-window{
-
+div.window{
+  position: absolute;
+/*  overflow: auto;*/
   background-color: #eeefff;
   border: solid #0066aa 2px;
-  width:50vw;
-  margin: auto;
-  padding-bottom:2vh;
-  overflow-y:scroll;
+  margin: 8px;
+  padding: 0px;
+  width: 420px;
+  height: 280px;
 }
 
-div.item-titlebar{
+div.titlebar{
   background-color: #0066aa;
   background-image: url(images/titlebar_bg.png);
   background-repeat: repeat-x;
@@ -49,60 +50,52 @@ span.titleButton#close{
   background: transparent url(images/close.png) top left no-repeat;
 }
 
-div.item-content {
+div.contents {
   background-color: #e0e4e8;
   overflow: auto;
   padding: 2px;
-
+  height:240px;
 }
 
 div.item{
- /*float: left;*/
- display:inline-block;
- overflow: hidden;
- position : relative;
- height: 80px;
- width: 56px;
- color : #004488;
- font-size: 18;
- padding: 0px;
- margin: 4px;
+  height: 50px;
+  width: 56px;
+  color : #004488;
+  font-size: 18;
+  padding: 0px;
+  margin: 4px;
 }
 
-div.item-name{
+div.itemName{
   font: 10px verdana, arial, helvetica;
   text-align: center;
-  position: relative;
-  top: 50px;
-}
-
-a{
-  cursor: help;
-  text-decoration: none;
 
 }
 
-a>div {
-  height:50px;
-}
 
-.item-folder{
+
+div.folder{
   background: transparent url(images/folder.png) top left no-repeat;
 }
 
-.item-file{
+div.file{
   background: transparent url(images/file.png) top left no-repeat;
 }
 
-.item-special{
+div.special{
   background: transparent url(images/folder_important.png) top left no-repeat;
 }
-.item-word{
+div.word{
   background: transparent url(images/word.png) top left no-repeat;
 }
-.item-ppt{
+div.ppt{
   background: transparent url(images/ppt.png) top left no-repeat;
 }
-.item-pdf{
+div.pdf{
   background: transparent url(images/pdf.png) top left no-repeat;
+}
+
+
+div.contents a {
+  display: inline-block;
 }
