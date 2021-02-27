@@ -1,101 +1,76 @@
 /*
 stylesheet for windows module
 */
-
-div.window{
-  position: absolute;
-/*  overflow: auto;*/
-  background-color: #eeefff;
-  border: solid #0066aa 2px;
-  margin: 8px;
-  padding: 0px;
-  width: 420px;
-  height: 280px;
+div.window { /*  overflow: auto;*/
+	background-color: #eeefff;
+	border: solid #0066aa 2px;
+	margin: 0 auto;
+	padding: 0px;
+	width: 420px;
+	height: 280px;
 }
 
-div.titlebar{
-  background-color: #0066aa;
-  background-image: url(images/titlebar_bg.png);
-  background-repeat: repeat-x;
-  color:white;
-  border-bottom: solid black 1px;
-  width: 100%;
-  height: 16px;
-  overflow:hidden;
+div.titlebar {
+	background-color: #0066aa;
+	background-image: url(images/titlebar_bg.png);
+	background-repeat: repeat-x;
+	color: white;
+	border-bottom: solid black 1px;
+	width: 100%;
+	height: 16px;
+	overflow: hidden;
 }
 
-span.titleButton{
-  position: relative;
-  height: 16px;
-  width: 16px;
-  padding: 0px;
-  margin: 0px 1px 0px 1px;
-  float:right;
+span.titleButton {
+	position: relative;
+	height: 16px;
+	width: 16px;
+	padding: 0px;
+	margin: 0px 1px; 0 px 1px;
+	float: right;
 }
 
-span.titleButton:hover{
-  background-color: #ffffff;
-  border: solid white 1px;
+span.titleButton:hover {
+	background-color: #ffffff;
+	border: solid white 1px;
 }
 
-span.titleButton#min{
-  background: transparent url(images/min.png) top left no-repeat;
+span.titleButton#min {
+	background: transparent url(images/min.png) top left no-repeat;
 }
 
-span.titleButton#max{
-  background: transparent url(images/max.png) top left no-repeat;
+span.titleButton#max {
+	background: transparent url(images/max.png) top left no-repeat;
 }
 
-span.titleButton#close{
-  background: transparent url(images/close.png) top left no-repeat;
+span.titleButton#close {
+	background: transparent url(images/close.png) top left no-repeat;
 }
 
 div.contents {
-  background-color: #e0e4e8;
-  overflow: auto;
-  padding: 2px;
-  height:240px;
+	background-color: #e0e4e8;
+	overflow: auto;
+	padding: 2px;
+	height: 240px;
 }
 
-div.item{
-  height: 50px;
-  width: 56px;
-  color : #004488;
-  font-size: 18;
-  padding: 0px;
-  margin: 4px;
+a {
+	cursor: pointer;
 }
 
-div.itemName{
-  font: 10px verdana, arial, helvetica;
-  text-align: center;
-
-}
-
-
-
-div.folder{
-  background: transparent url(images/folder.png) top left no-repeat;
-}
-
-div.file{
-  background: transparent url(images/file.png) top left no-repeat;
-}
-
-div.special{
-  background: transparent url(images/folder_important.png) top left no-repeat;
-}
-div.word{
-  background: transparent url(images/word.png) top left no-repeat;
-}
-div.ppt{
-  background: transparent url(images/ppt.png) top left no-repeat;
-}
-div.pdf{
-  background: transparent url(images/pdf.png) top left no-repeat;
+.contents a {
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	width: 56px;
+	color: #004488;
+	font-size: 18;
+	padding: 0px;
+	margin: 4px;
+	padding-top: 49px;
+	font: 10px verdana, arial, helvetica;
+	text-align: center;
+	background: transparent url(images/folder.png) center top no-repeat;
 }
 
 
-div.contents a {
-  display: inline-block;
-}
